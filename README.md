@@ -44,3 +44,47 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+================================================================================================
+
+# Node with React: Build & Deploy a Fullstack Web Application
+
+# FRONTEND
+
+# Project structure
+
+1. create a new react-app with typecsript template
+   `yarn create react-app client --template typescript`
+
+2. create project structure `assets & sub folders` `colors`, `components`, `hooks`, `mocks`, `pages`, `redux`, `services`
+3. add `api`, `socket` and `utils` folder`in`services` folder
+
+4. install `sass` & `react-loading-skeleton` librarys
+   `yarn add -D node-sass` & types: `yarn add -D @types/node-sass` & `yarn add react-loading-skeleton`
+
+5. rename `App.css` and `index.css` to .scss extension
+6. add styles for both of the above from repo
+   NB: we use variables from colors folder as: `background: var(--white-1);`
+
+# Setup Eslint and Prettier
+
+1. Install Eslint and dependencies:
+   `yarn add -D @typescript-eslint/eslint-plugin `
+   `@typescript-eslint/parser`
+   `eslint eslint-config-airbnb`
+   `eslint-config-airbnb-typescript`
+   `eslint-config-prettier `
+   `eslint-import-resolver-typescript`
+   `eslint-plugin-import`
+   `eslint-plugin-jsx-a11y`
+   `eslint-plugin-prettier`
+   `eslint-plugin-react`
+   `eslint-plugin-react-hooks prettier`
+
+2. run `npx eslint --init` and choose `typescript` as language and all the other required configs
+3. add code to generatied `eslint.json`file and add lint scripts to `package.json`
+4. add editor.config in root directory
+5. add `.eslintignore` and `.prettierignore` in root
+6. run `yarn run lint:fix` to test results
+
+# Setup github repo
